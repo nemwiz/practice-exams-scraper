@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from anki_card_creator import create_anki_card
 
-with open('azure/azure-storage-services.html') as file:
+with open('azure/azure-monitoring.html') as file:
     soup = BeautifulSoup(file, 'html.parser')
 
     exam = []
@@ -38,10 +38,13 @@ with open('azure/azure-storage-services.html') as file:
         explanation_containers = question_container.find_all(class_='quiz-choice-explanation')
 
         for explanation_container in explanation_containers:
-            if explanation_container.p:
+            if explanation_container.p and 'is-correct' in explanation_container.previous_sibling.previous_sibling.attrs['class']:
+
                 explanation = ' '.join(explanation_container.p.text.split())
                 if "That's correct" in explanation:
                     exam_question.update({'explanation': explanation.replace("That's correct. ", '')})
+
+                exam_question.update({'explanation': explanation})
 
         print(exam_question)
 
