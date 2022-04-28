@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from anki_card_creator import create_anki_card
 
-with open('azure/azure-monitoring.html') as file:
+with open('azure/azure-network-security.html') as file:
     soup = BeautifulSoup(file, 'html.parser')
 
     exam = []
