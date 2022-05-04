@@ -6,11 +6,10 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 
-    <link href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/1-introduction"
-          rel="canonical">
+    <link href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/1-introduction" rel="canonical">
     <title>Check your knowledge - Learn | Microsoft Docs</title>
 
-    <link rel="stylesheet" href="azure-devops_files/543487fb.css">
+    <link rel="stylesheet" href="azure-serverless-solutions_files/543487fb.css">
 
 
     <script id="msdocs-script">
@@ -33,7 +32,7 @@
 			feedbackSystem: 'GitHub',
 			feedbackGitHubRepo: 'MicrosoftDocs/learn',
 			feedbackProductUrl: '',
-			contentGitUrl: 'https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/azure-fundamentals/azure-devops-devtest-labs/1-introduction.yml',
+			contentGitUrl: 'https://github.com/MicrosoftDocs/learn/blob/main/learn-pr/azure-fundamentals/serverless-fundamentals/1-introduction.yml',
 			extendBreadcrumb: false,
 			isEditDisplayable: false,
 			hideViewSource: false,
@@ -42,6 +41,7 @@
 			hasShare: false,
 			hasRecommendations: false,
 			contributors: [
+						{ name: "itechedit", url: "https://github.com/itechedit" },
 						{ name: "tpetchel", url: "https://github.com/tpetchel" }
 ],
 			mathjax: {
@@ -51,11 +51,11 @@
 	};
 
     </script>
-    <script src="azure-devops_files/wcp-consent.js"></script>
-    <script src="azure-devops_files/ms.js"></script>
+    <script src="azure-serverless-solutions_files/wcp-consent.js"></script>
+    <script src="azure-serverless-solutions_files/ms.js"></script>
 
-    <script src="azure-devops_files/5cce29c0.js"></script>
-    <script src="azure-devops_files/3aede569.js"></script>
+    <script src="azure-serverless-solutions_files/5cce29c0.js"></script>
+    <script src="azure-serverless-solutions_files/3aede569.js"></script>
     <style></style>
     <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
 .MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
@@ -66,19 +66,19 @@
     </style>
     <style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
 #MathJax_About.MathJax_MousePost {outline: none}
-.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
 .MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
 .MathJax_MenuActive .MathJax_MenuArrow {color: white}
 .MathJax_MenuArrow.RTL {left: .5em; right: auto}
 .MathJax_MenuCheck {position: absolute; left: .7em}
 .MathJax_MenuCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuRadioCheck {position: absolute; left: 1em}
-.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
-.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
-.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
 .MathJax_MenuDisabled {color: GrayText}
-.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuActive {background-color: #606872; color: white}
 .MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
 .MathJax_ContextMenu:focus {outline: none}
 .MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
@@ -195,10 +195,10 @@
                 "item": "/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/"
             },
             {
-                "name": "Choose the best tools to help organizations build better solutions",
+                "name": "Choose the best Azure serverless technology for your business scenario",
                 "position": 5,
                 "@type": "ListItem",
-                "item": "/en-us/learn/modules/azure-devops-devtest-labs/"
+                "item": "/en-us/learn/modules/serverless-fundamentals/"
             }
         ]
     }</script>
@@ -231,10 +231,10 @@
                 "item": "/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/"
             },
             {
-                "name": "Choose the best tools to help organizations build better solutions",
+                "name": "Choose the best Azure serverless technology for your business scenario",
                 "position": 5,
                 "@type": "ListItem",
-                "item": "/en-us/learn/modules/azure-devops-devtest-labs/"
+                "item": "/en-us/learn/modules/serverless-fundamentals/"
             }
         ]
     }</script>
@@ -267,10 +267,10 @@
                 "item": "/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/"
             },
             {
-                "name": "Choose the best tools to help organizations build better solutions",
+                "name": "Choose the best Azure serverless technology for your business scenario",
                 "position": 5,
                 "@type": "ListItem",
-                "item": "/en-us/learn/modules/azure-devops-devtest-labs/"
+                "item": "/en-us/learn/modules/serverless-fundamentals/"
             }
         ]
     }</script>
@@ -303,10 +303,10 @@
                 "item": "/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/"
             },
             {
-                "name": "Choose the best tools to help organizations build better solutions",
+                "name": "Choose the best Azure serverless technology for your business scenario",
                 "position": 5,
                 "@type": "ListItem",
-                "item": "/en-us/learn/modules/azure-devops-devtest-labs/"
+                "item": "/en-us/learn/modules/serverless-fundamentals/"
             }
         ]
     }</script>
@@ -339,46 +339,10 @@
                 "item": "/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/"
             },
             {
-                "name": "Choose the best tools to help organizations build better solutions",
+                "name": "Choose the best Azure serverless technology for your business scenario",
                 "position": 5,
                 "@type": "ListItem",
-                "item": "/en-us/learn/modules/azure-devops-devtest-labs/"
-            }
-        ]
-    }</script>
-    <script type="application/ld+json">{
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "name": "Docs",
-                "position": 1,
-                "@type": "ListItem",
-                "item": "/en-us/"
-            },
-            {
-                "name": "Learn",
-                "position": 2,
-                "@type": "ListItem",
-                "item": "/en-us/learn/"
-            },
-            {
-                "name": "Browse",
-                "position": 3,
-                "@type": "ListItem",
-                "item": "/en-us/learn/browse/"
-            },
-            {
-                "name": "Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure",
-                "position": 4,
-                "@type": "ListItem",
-                "item": "/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/"
-            },
-            {
-                "name": "Choose the best tools to help organizations build better solutions",
-                "position": 5,
-                "@type": "ListItem",
-                "item": "/en-us/learn/modules/azure-devops-devtest-labs/"
+                "item": "/en-us/learn/modules/serverless-fundamentals/"
             }
         ]
     }</script>
@@ -387,7 +351,7 @@
     <meta property="og:title" content="Check your knowledge - Learn">
     <meta property="og:type" content="website">
     <meta property="og:url"
-          content="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/7-knowledge-check">
+          content="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/6-knowledge-check">
     <meta property="og:description" content="Review what you've learned.">
     <meta property="og:image" content="https://docs.microsoft.com/en-us/media/logos/logo-ms-social.png">
     <meta property="og:image:alt" content="Microsoft Logo">
@@ -400,10 +364,10 @@
     <meta name="clicktale" content="true">
     <meta name="depot_name" content="Docs.learn-pr">
     <meta name="description" content="Review what you've learned.">
-    <meta name="document_id" content="43bc5dad-fe0a-f273-495e-202458ac17de">
-    <meta name="document_version_independent_id" content="98d99988-ed79-7678-8e3e-cbcdef27a72a">
+    <meta name="document_id" content="9db4efe9-8c08-044f-be50-687becde2f22">
+    <meta name="document_version_independent_id" content="3433caa0-1a58-7384-2ab2-c8a5f72af5a7">
     <meta name="gitcommit"
-          content="https://github.com/MicrosoftDocs/learn-pr/blob/c36c7e58c643db57e6b3ba6629e63c3d571a4961/learn-pr/azure-fundamentals/azure-devops-devtest-labs/7-knowledge-check.yml">
+          content="https://github.com/MicrosoftDocs/learn-pr/blob/2aa6f497f979483ab051842d9a002d3170ed1735/learn-pr/azure-fundamentals/serverless-fundamentals/6-knowledge-check.yml">
     <meta name="locale" content="en-us">
     <meta name="localization_scopes" content="de-de">
     <meta name="localization_scopes" content="es-es">
@@ -427,7 +391,7 @@
     <meta name="ms.prod" content="learning-languages">
     <meta name="ms.topic" content="interactive-tutorial">
     <meta name="original_content_git_url"
-          content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/azure-fundamentals/azure-devops-devtest-labs/7-knowledge-check.yml">
+          content="https://github.com/MicrosoftDocs/learn-pr/blob/live/learn-pr/azure-fundamentals/serverless-fundamentals/6-knowledge-check.yml">
     <meta name="page_kind" content="unit">
     <meta name="page_type" content="learn">
     <meta name="ROBOTS" content="noindex">
@@ -435,7 +399,7 @@
     <meta name="schema" content="ModuleUnit">
     <meta name="site_name" content="Docs">
     <meta name="uhfHeaderId" content="MSDocsHeader-Learn">
-    <meta name="uid" content="learn.azure.azure-devops-devtest-labs.knowledge-check">
+    <meta name="uid" content="learn.azure.serverless-fundamentals.knowledge-check">
     <meta name="unit_completion_type" content="quiz">
     <meta name="updated_at" content="2021-02-04 06:08 PM">
     <script type="application/ld+json">{
@@ -467,10 +431,10 @@
                 "item": "/en-us/learn/paths/az-900-describe-core-solutions-management-tools-azure/"
             },
             {
-                "name": "Choose the best tools to help organizations build better solutions",
+                "name": "Choose the best Azure serverless technology for your business scenario",
                 "position": 5,
                 "@type": "ListItem",
-                "item": "/en-us/learn/modules/azure-devops-devtest-labs/"
+                "item": "/en-us/learn/modules/serverless-fundamentals/"
             }
         ]
     }</script>
@@ -615,13 +579,13 @@
                         <!---->
                         <li class="dropdown nav-bar-item" hidden="">
                             <button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline"
-                                    aria-controls="ax-204">
+                                    aria-controls="ax-168">
                                 <span><!---->More<!----></span>
                                 <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-down-light expanded-indicator"></span>
 			</span>
                             </button>
-                            <ul class="dropdown-menu" id="ax-204" aria-label="More">
+                            <ul class="dropdown-menu" id="ax-168" aria-label="More">
                                 <!---->
                                 <li class="nav-bar-item" hidden="">
                                     <a class=" nav-bar-button " href="https://docs.microsoft.com/en-us/documentation">
@@ -667,7 +631,7 @@
 
                 <span class="nav-bar-spacer"></span>
 
-                <div class="nav-bar-search " id="ax-205" hidden="">
+                <div class="nav-bar-search " id="ax-169" hidden="">
 
                     <form class="nav-bar-search-form" method="GET" name="nav-bar-search-form" role="search"
                           id="nav-bar-search-form" aria-label="Search" action="/en-us/search/">
@@ -677,8 +641,8 @@
                                        autocomplete="off" autocorrect="off" spellcheck="false" id="site-search-input"
                                        class="autocomplete-input input input-sm
 						
-						" type="search" name="terms" aria-expanded="false" aria-owns="ax-206-listbox"
-                                       aria-controls="ax-206-listbox" aria-activedescendant="" aria-label="Search"
+						" type="search" name="terms" aria-expanded="false" aria-owns="ax-170-listbox"
+                                       aria-controls="ax-170-listbox" aria-activedescendant="" aria-label="Search"
                                        placeholder="Search" pattern=".*">
 
                                 <span aria-hidden="true" class="icon is-small is-left" hidden="">
@@ -690,7 +654,7 @@
                             </div>
 
                             <ul class="autocomplete-suggestions is-vertically-scrollable" role="listbox"
-                                id="ax-206-listbox" aria-label="site-search-input-suggestions" hidden="">
+                                id="ax-170-listbox" aria-label="site-search-input-suggestions" hidden="">
 
 
                             </ul>
@@ -712,10 +676,10 @@
                         <div class="autocomplete" data-bi-name="autocomplete"><!---->
                             <div class="control has-icons-left">
                                 <input role="combobox" maxlength="100" aria-autocomplete="list" autocapitalize="none"
-                                       autocomplete="off" autocorrect="off" spellcheck="false" id="ax-207" class="autocomplete-input input input-sm
+                                       autocomplete="off" autocorrect="off" spellcheck="false" id="ax-171" class="autocomplete-input input input-sm
 						control has-icons-left
-						" type="search" name="terms" aria-expanded="false" aria-owns="ax-208-listbox"
-                                       aria-controls="ax-208-listbox" aria-activedescendant="" aria-label="Search"
+						" type="search" name="terms" aria-expanded="false" aria-owns="ax-172-listbox"
+                                       aria-controls="ax-172-listbox" aria-activedescendant="" aria-label="Search"
                                        placeholder="Search" pattern=".*">
 
                                 <span aria-hidden="true" class="icon is-small is-left">
@@ -727,7 +691,7 @@
                             </div>
 
                             <ul class="autocomplete-suggestions is-vertically-scrollable" role="listbox"
-                                id="ax-208-listbox" aria-label="ax-207-suggestions" hidden="">
+                                id="ax-172-listbox" aria-label="ax-171-suggestions" hidden="">
 
 
                             </ul>
@@ -744,7 +708,7 @@
                 <div class="nav-bar-search " hidden="">
                     <div class="nav-bar-search-form-expander">
                         <button id="form-expander" class="nav-bar-button has-hover-underline " title="Search"
-                                aria-expanded="false" aria-controls="ax-205">
+                                aria-expanded="false" aria-controls="ax-169">
 
                             <span class="is-visually-hidden-mobile"><!---->Search<!----></span>
                             <span class="icon margin-left-xxs" aria-hidden="true">
@@ -826,13 +790,13 @@
                         <li class="dropdown nav-bar-item">
                             <button aria-expanded="false"
                                     class="dropdown-trigger nav-bar-button is-active has-hover-underline"
-                                    aria-controls="ax-209">
+                                    aria-controls="ax-173">
                                 <span><!---->Products<!----></span>
                                 <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-down-light expanded-indicator"></span>
 			</span>
                             </button>
-                            <ul class="dropdown-menu" id="ax-209" aria-label="Products">
+                            <ul class="dropdown-menu" id="ax-173" aria-label="Products">
                                 <!---->
                                 <li class="nav-bar-item">
                                     <a class="has-external-link-indicator nav-bar-button "
@@ -894,13 +858,13 @@
                         </li><!---->
                         <li class="dropdown nav-bar-item">
                             <button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline"
-                                    aria-controls="ax-210">
+                                    aria-controls="ax-174">
                                 <span><!---->Roles<!----></span>
                                 <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-down-light expanded-indicator"></span>
 			</span>
                             </button>
-                            <ul class="dropdown-menu" id="ax-210" aria-label="Roles">
+                            <ul class="dropdown-menu" id="ax-174" aria-label="Roles">
                                 <!---->
                                 <li class="nav-bar-item">
                                     <a class="has-external-link-indicator nav-bar-button "
@@ -1011,13 +975,13 @@
                         </li><!---->
                         <li class="dropdown nav-bar-item">
                             <button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline"
-                                    aria-controls="ax-211">
+                                    aria-controls="ax-175">
                                 <span><!---->Educator Center<!----></span>
                                 <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-down-light expanded-indicator"></span>
 			</span>
                             </button>
-                            <ul class="dropdown-menu" id="ax-211" aria-label="Educator Center">
+                            <ul class="dropdown-menu" id="ax-175" aria-label="Educator Center">
                                 <!---->
                                 <li class="nav-bar-item">
                                     <a class="has-external-link-indicator nav-bar-button "
@@ -1028,13 +992,13 @@
                                 <!---->
                                 <li class="dropdown nav-bar-item">
                                     <button aria-expanded="false" class="dropdown-trigger nav-bar-button  "
-                                            aria-controls="ax-212">
+                                            aria-controls="ax-176">
                                         <span><!---->Professional development<!----></span>
                                         <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-right-light "></span>
 			</span>
                                     </button>
-                                    <ul class="dropdown-menu" id="ax-212" aria-label="Professional development">
+                                    <ul class="dropdown-menu" id="ax-176" aria-label="Professional development">
                                         <!---->
                                         <li class="nav-bar-item">
                                             <a class="has-external-link-indicator nav-bar-button "
@@ -1089,13 +1053,13 @@
                                 </li><!---->
                                 <li class="dropdown nav-bar-item">
                                     <button aria-expanded="false" class="dropdown-trigger nav-bar-button  "
-                                            aria-controls="ax-213">
+                                            aria-controls="ax-177">
                                         <span><!---->Product guides<!----></span>
                                         <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-right-light "></span>
 			</span>
                                     </button>
-                                    <ul class="dropdown-menu" id="ax-213" aria-label="Product guides">
+                                    <ul class="dropdown-menu" id="ax-177" aria-label="Product guides">
                                         <!---->
                                         <li class="nav-bar-item">
                                             <a class="has-external-link-indicator nav-bar-button "
@@ -1187,13 +1151,13 @@
                         <!---->
                         <li class="dropdown nav-bar-item">
                             <button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline"
-                                    aria-controls="ax-214">
+                                    aria-controls="ax-178">
                                 <span><!---->Certifications<!----></span>
                                 <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-down-light expanded-indicator"></span>
 			</span>
                             </button>
-                            <ul class="dropdown-menu" id="ax-214" aria-label="Certifications">
+                            <ul class="dropdown-menu" id="ax-178" aria-label="Certifications">
                                 <!---->
                                 <li class="nav-bar-item">
                                     <a class="has-external-link-indicator nav-bar-button "
@@ -1227,23 +1191,23 @@
                         <!---->
                         <li class="dropdown nav-bar-item" hidden="">
                             <button aria-expanded="false" class="dropdown-trigger nav-bar-button  has-hover-underline"
-                                    aria-controls="ax-215">
+                                    aria-controls="ax-179">
                                 <span><!---->More<!----></span>
                                 <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-down-light expanded-indicator"></span>
 			</span>
                             </button>
-                            <ul class="dropdown-menu" id="ax-215" aria-label="More">
+                            <ul class="dropdown-menu" id="ax-179" aria-label="More">
                                 <!---->
                                 <li class="dropdown nav-bar-item" hidden="">
                                     <button aria-expanded="false" class="dropdown-trigger nav-bar-button is-active "
-                                            aria-controls="ax-216">
+                                            aria-controls="ax-180">
                                         <span><!---->Products<!----></span>
                                         <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-right-light "></span>
 			</span>
                                     </button>
-                                    <ul class="dropdown-menu" id="ax-216" aria-label="Products">
+                                    <ul class="dropdown-menu" id="ax-180" aria-label="Products">
                                         <!---->
                                         <li class="nav-bar-item">
                                             <a class="has-external-link-indicator nav-bar-button "
@@ -1305,13 +1269,13 @@
                                 </li><!---->
                                 <li class="dropdown nav-bar-item" hidden="">
                                     <button aria-expanded="false" class="dropdown-trigger nav-bar-button  "
-                                            aria-controls="ax-217">
+                                            aria-controls="ax-181">
                                         <span><!---->Roles<!----></span>
                                         <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-right-light "></span>
 			</span>
                                     </button>
-                                    <ul class="dropdown-menu" id="ax-217" aria-label="Roles">
+                                    <ul class="dropdown-menu" id="ax-181" aria-label="Roles">
                                         <!---->
                                         <li class="nav-bar-item">
                                             <a class="has-external-link-indicator nav-bar-button "
@@ -1422,13 +1386,13 @@
                                 </li><!---->
                                 <li class="dropdown nav-bar-item" hidden="">
                                     <button aria-expanded="false" class="dropdown-trigger nav-bar-button  "
-                                            aria-controls="ax-218">
+                                            aria-controls="ax-182">
                                         <span><!---->Educator Center<!----></span>
                                         <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-right-light "></span>
 			</span>
                                     </button>
-                                    <ul class="dropdown-menu" id="ax-218" aria-label="Educator Center">
+                                    <ul class="dropdown-menu" id="ax-182" aria-label="Educator Center">
                                         <!---->
                                         <li class="nav-bar-item">
                                             <a class="has-external-link-indicator nav-bar-button "
@@ -1439,13 +1403,13 @@
                                         <!---->
                                         <li class="dropdown nav-bar-item">
                                             <button aria-expanded="false" class="dropdown-trigger nav-bar-button  "
-                                                    aria-controls="ax-219">
+                                                    aria-controls="ax-183">
                                                 <span><!---->Professional development<!----></span>
                                                 <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-right-light "></span>
 			</span>
                                             </button>
-                                            <ul class="dropdown-menu" id="ax-219" aria-label="Professional development">
+                                            <ul class="dropdown-menu" id="ax-183" aria-label="Professional development">
                                                 <!---->
                                                 <li class="nav-bar-item">
                                                     <a class="has-external-link-indicator nav-bar-button "
@@ -1500,13 +1464,13 @@
                                         </li><!---->
                                         <li class="dropdown nav-bar-item">
                                             <button aria-expanded="false" class="dropdown-trigger nav-bar-button  "
-                                                    aria-controls="ax-220">
+                                                    aria-controls="ax-184">
                                                 <span><!---->Product guides<!----></span>
                                                 <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-right-light "></span>
 			</span>
                                             </button>
-                                            <ul class="dropdown-menu" id="ax-220" aria-label="Product guides">
+                                            <ul class="dropdown-menu" id="ax-184" aria-label="Product guides">
                                                 <!---->
                                                 <li class="nav-bar-item">
                                                     <a class="has-external-link-indicator nav-bar-button "
@@ -1598,13 +1562,13 @@
                                 <!---->
                                 <li class="dropdown nav-bar-item" hidden="">
                                     <button aria-expanded="false" class="dropdown-trigger nav-bar-button  "
-                                            aria-controls="ax-221">
+                                            aria-controls="ax-185">
                                         <span><!---->Certifications<!----></span>
                                         <span class="nav-bar-button-chevron" aria-hidden="true">
 				<span class="docon docon-chevron-right-light "></span>
 			</span>
                                     </button>
-                                    <ul class="dropdown-menu" id="ax-221" aria-label="Certifications">
+                                    <ul class="dropdown-menu" id="ax-185" aria-label="Certifications">
                                         <!---->
                                         <li class="nav-bar-item">
                                             <a class="has-external-link-indicator nav-bar-button "
@@ -1748,9 +1712,9 @@ Table of contents						</span>
                                                 <!----><!---->
                                                 <li class="line-clamp-1">
                                                     <a class="display-block has-inner-focus padding-inline-xs padding-block-xxs border-radius font-size-sm"
-                                                       href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/">
-                                                        Choose the best tools to help organizations build better
-                                                        solutions
+                                                       href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/">
+                                                        Choose the best Azure serverless technology for your business
+                                                        scenario
                                                     </a>
                                                 </li>
                                                 <!---->
@@ -1783,9 +1747,9 @@ Table of contents						</span>
                                             </li>
                                             <!----><!---->
                                             <li class="breadcrumbs-item" data-bread-crumbs-collapse-target="" style="">
-                                                <a href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/"
-                                                   style=""> Choose the best tools to help organizations build better
-                                                    solutions </a>
+                                                <a href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/"
+                                                   style=""> Choose the best Azure serverless technology for your
+                                                    business scenario </a>
                                             </li>
                                             <!---->
                                         </ol>
@@ -1903,7 +1867,7 @@ Table of contents						</span>
                                      data-bi-name="module-nav">
                                     <a class="pagination-previous button button-clear text-decoration-none is-hidden-portrait has-inner-focus"
                                        data-bi-name="previous-unit" id="previous-unit-link"
-                                       href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/6-use-azure-devtest-labs/">
+                                       href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/5-use-azure-logic-apps/">
                                         <span aria-hidden="true" class="icon docon docon-chevron-left-light"></span>
                                         <span>Previous</span>
                                     </a>
@@ -1912,7 +1876,7 @@ Table of contents						</span>
                                             <button aria-controls="module-menu" aria-expanded="false"
                                                     class="pagination-link margin-inline-auto button button-clear text-decoration-none button-sm dropdown-trigger"
                                                     data-bi-name="dropdown-trigger" title="Module menu">
-                                                <span id="unit-place">Unit 7 of 8</span>
+                                                <span id="unit-place">Unit 6 of 7</span>
                                                 <span aria-hidden="true" class="icon">
                         <span class="docon docon-chevron-down-light expanded-indicator"></span>
                     </span>
@@ -1921,16 +1885,16 @@ Table of contents						</span>
                                                  role="menu"><!---->
                                                 <div class="nav-box">
                                                     <h2 class="nav-box-title font-size-md margin-top-none"><!---->Choose
-                                                        the best tools to help organizations build better solutions
+                                                        the best Azure serverless technology for your business scenario
                                                         <!----></h2>
                                                     <ul class="margin-none font-size-sm has-text-subtle is-unstyled"
                                                         data-bi-name="module-menu-links">
                                                         <!---->
                                                         <li class="nav-box-line module-navigation-item completable is-unstyled is-complete"
-                                                            data-nav-uid="learn.azure.azure-devops-devtest-labs.introduction"
-                                                            data-progress-uid="learn.azure.azure-devops-devtest-labs.introduction">
+                                                            data-nav-uid="learn.azure.serverless-fundamentals.introduction"
+                                                            data-progress-uid="learn.azure.serverless-fundamentals.introduction">
                                                             <a class="line-item is-spaced has-inner-focus"
-                                                               href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/1-introduction/">
+                                                               href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/1-introduction/">
                                                                 <span><!---->Introduction<!----></span>
                                                                 <div>
                                                                     <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->1 min
@@ -1942,14 +1906,13 @@ Table of contents						</span>
                                                             </a>
                                                         </li><!---->
                                                         <li class="nav-box-line module-navigation-item completable is-unstyled is-complete"
-                                                            data-nav-uid="learn.azure.azure-devops-devtest-labs.identify-product-options"
-                                                            data-progress-uid="learn.azure.azure-devops-devtest-labs.identify-product-options">
+                                                            data-nav-uid="learn.azure.serverless-fundamentals.identify-product-options"
+                                                            data-progress-uid="learn.azure.serverless-fundamentals.identify-product-options">
                                                             <a class="line-item is-spaced has-inner-focus"
-                                                               href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/2-identify-product-options/">
-                                                                <span><!---->Understand your product options
-                                                                    <!----></span>
+                                                               href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/2-identify-product-options/">
+                                                                <span><!---->Identify the product options<!----></span>
                                                                 <div>
-                                                                    <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->4 min
+                                                                    <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->5 min
                                                                         <!----></span>
                                                                     <span class="is-shown-complete has-text-success docon docon-check">
 									<span class="is-visually-hidden">: Completed<!----></span>
@@ -1958,13 +1921,13 @@ Table of contents						</span>
                                                             </a>
                                                         </li><!---->
                                                         <li class="nav-box-line module-navigation-item completable is-unstyled is-complete"
-                                                            data-nav-uid="learn.azure.azure-devops-devtest-labs.analyze-decision-criteria"
-                                                            data-progress-uid="learn.azure.azure-devops-devtest-labs.analyze-decision-criteria">
+                                                            data-nav-uid="learn.azure.serverless-fundamentals.analyze-decision-criteria"
+                                                            data-progress-uid="learn.azure.serverless-fundamentals.analyze-decision-criteria">
                                                             <a class="line-item is-spaced has-inner-focus"
-                                                               href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/3-analyze-decision-criteria/">
+                                                               href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/3-analyze-decision-criteria/">
                                                                 <span><!---->Analyze the decision criteria<!----></span>
                                                                 <div>
-                                                                    <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->4 min
+                                                                    <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->5 min
                                                                         <!----></span>
                                                                     <span class="is-shown-complete has-text-success docon docon-check">
 									<span class="is-visually-hidden">: Completed<!----></span>
@@ -1973,12 +1936,11 @@ Table of contents						</span>
                                                             </a>
                                                         </li><!---->
                                                         <li class="nav-box-line module-navigation-item completable is-unstyled is-complete"
-                                                            data-nav-uid="learn.azure.azure-devops-devtest-labs.use-azure-devops"
-                                                            data-progress-uid="learn.azure.azure-devops-devtest-labs.use-azure-devops">
+                                                            data-nav-uid="learn.azure.serverless-fundamentals.use-azure-functions"
+                                                            data-progress-uid="learn.azure.serverless-fundamentals.use-azure-functions">
                                                             <a class="line-item is-spaced has-inner-focus"
-                                                               href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/4-use-azure-devops/">
-                                                                <span><!---->Use Azure DevOps to manage the application development lifecycle
-                                                                    <!----></span>
+                                                               href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/4-use-azure-functions/">
+                                                                <span><!---->Use Azure Functions<!----></span>
                                                                 <div>
                                                                     <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->3 min
                                                                         <!----></span>
@@ -1989,28 +1951,11 @@ Table of contents						</span>
                                                             </a>
                                                         </li><!---->
                                                         <li class="nav-box-line module-navigation-item completable is-unstyled is-complete"
-                                                            data-nav-uid="learn.azure.azure-devops-devtest-labs.use-github"
-                                                            data-progress-uid="learn.azure.azure-devops-devtest-labs.use-github">
+                                                            data-nav-uid="learn.azure.serverless-fundamentals.use-azure-logic-apps"
+                                                            data-progress-uid="learn.azure.serverless-fundamentals.use-azure-logic-apps">
                                                             <a class="line-item is-spaced has-inner-focus"
-                                                               href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/5-use-github/">
-                                                                <span><!---->Use GitHub to contribute to open-source software
-                                                                    <!----></span>
-                                                                <div>
-                                                                    <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->3 min
-                                                                        <!----></span>
-                                                                    <span class="is-shown-complete has-text-success docon docon-check">
-									<span class="is-visually-hidden">: Completed<!----></span>
-								</span>
-                                                                </div>
-                                                            </a>
-                                                        </li><!---->
-                                                        <li class="nav-box-line module-navigation-item completable is-unstyled is-complete"
-                                                            data-nav-uid="learn.azure.azure-devops-devtest-labs.use-azure-devtest-labs"
-                                                            data-progress-uid="learn.azure.azure-devops-devtest-labs.use-azure-devtest-labs">
-                                                            <a class="line-item is-spaced has-inner-focus"
-                                                               href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/6-use-azure-devtest-labs/">
-                                                                <span><!---->Use Azure DevTest Labs to manage testing environments
-                                                                    <!----></span>
+                                                               href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/5-use-azure-logic-apps/">
+                                                                <span><!---->Use Azure Logic Apps<!----></span>
                                                                 <div>
                                                                     <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->2 min
                                                                         <!----></span>
@@ -2021,10 +1966,10 @@ Table of contents						</span>
                                                             </a>
                                                         </li><!---->
                                                         <li class="nav-box-line module-navigation-item completable is-unstyled is-current is-complete"
-                                                            data-nav-uid="learn.azure.azure-devops-devtest-labs.knowledge-check"
-                                                            data-progress-uid="learn.azure.azure-devops-devtest-labs.knowledge-check">
+                                                            data-nav-uid="learn.azure.serverless-fundamentals.knowledge-check"
+                                                            data-progress-uid="learn.azure.serverless-fundamentals.knowledge-check">
                                                             <a class="line-item is-spaced has-inner-focus"
-                                                               href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/7-knowledge-check/">
+                                                               href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/6-knowledge-check/">
                                                                 <span><!---->Knowledge check<!----></span>
                                                                 <div>
                                                                     <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->3 min
@@ -2036,10 +1981,10 @@ Table of contents						</span>
                                                             </a>
                                                         </li><!---->
                                                         <li class="nav-box-line module-navigation-item completable is-unstyled"
-                                                            data-nav-uid="learn.azure.azure-devops-devtest-labs.summary"
-                                                            data-progress-uid="learn.azure.azure-devops-devtest-labs.summary">
+                                                            data-nav-uid="learn.azure.serverless-fundamentals.summary"
+                                                            data-progress-uid="learn.azure.serverless-fundamentals.summary">
                                                             <a class="line-item is-spaced has-inner-focus"
-                                                               href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/8-summary/">
+                                                               href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/7-summary/">
                                                                 <span><!---->Summary<!----></span>
                                                                 <div>
                                                                     <span class="is-hidden-complete text-decoration-none has-no-wrap"><!---->1 min
@@ -2057,7 +2002,7 @@ Table of contents						</span>
                                     </ul>
                                     <a class="pagination-next button button-clear text-decoration-none is-hidden-portrait has-inner-focus"
                                        data-bi-name="next-unit" id="next-unit-link"
-                                       href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/8-summary/">
+                                       href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/7-summary/">
                                         <span>Next</span>
                                         <span aria-hidden="true" class="icon docon docon-chevron-right-light"></span>
                                     </a>
@@ -2068,7 +2013,7 @@ Table of contents						</span>
                                 <div class="column" id="previous-unit-link-mobile-col">
                                     <a class="button button-block button-filled is-radiusless button-lg margin-none has-inner-focus"
                                        data-bi-name="previous-unit" id="previous-unit-link-mobile"
-                                       href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/6-use-azure-devtest-labs/">
+                                       href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/5-use-azure-logic-apps/">
                                         <span aria-hidden="true" class="icon docon docon-chevron-left-light"></span>
                                         <span>Previous</span>
                                     </a>
@@ -2076,7 +2021,7 @@ Table of contents						</span>
                                 <div class="column" id="next-unit-link-mobile-col">
                                     <a class="button button-block button-filled button-primary button-lg is-radiusless margin-none has-inner-focus"
                                        data-bi-name="next-unit" id="next-unit-link-mobile"
-                                       href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/8-summary/">
+                                       href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/7-summary/">
                                         <span>Next</span>
                                         <span aria-hidden="true" class="icon docon docon-chevron-right-light"></span>
                                     </a>
@@ -2088,7 +2033,7 @@ Table of contents						</span>
                             <div class="modular-content-container has-body-background box">
                                 <div id="unit-inner-section" class="section is-uniform position-relative">
                                     <h1 class="margin-right-xxl-desktop">Knowledge check</h1>
-                                    <div data-progress-uid="learn.azure.azure-devops-devtest-labs.knowledge-check"
+                                    <div data-progress-uid="learn.azure.serverless-fundamentals.knowledge-check"
                                          class="xp-tag position-absolute top-0 right-0 margin-top-xs margin-top-sm-tablet margin-top-lg-desktop margin-top-xs-interactive margin-right-sm margin-right-lg-tablet margin-right-sm-interactive is-complete">
                                         <div class="xp-tag-hexagon">
 				<span class="xp-tag-icon is-shown-complete docon docon-check">
@@ -2110,21 +2055,31 @@ Table of contents						</span>
                                                      aria-labelledby="quiz-question-1">
                                                     <div id="quiz-question-1" class="margin-top-sm margin-bottom-xs">
                                                         <span class="font-weight-semibold">1. </span>
-                                                        <p>Which of the following choices would not be used to automate
-                                                            a CI/CD process?</p>
+                                                        <p>You
+                                                            need to process messages from a queue, parse them by using
+                                                            some
+                                                            existing imperative logic written in Java, and then send
+                                                            them to a
+                                                            third-party API. Which serverless option should you
+                                                            choose?</p>
                                                     </div>
                                                     <div class="margin-inline-lg-tablet margin-inline-none margin-top-xxs">
                                                         <input id="quiz-choice-0-0" type="radio" name="0" value="0"
-                                                               class="visually-hidden choice-input" disabled="disabled">
+                                                               class="visually-hidden choice-input"
+                                                               data-com.bitwarden.browser.user-edited="yes"
+                                                               disabled="disabled" checked="checked">
                                                         <label for="quiz-choice-0-0" aria-required="true"
-                                                               class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet">
+                                                               class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet is-selected is-correct"
+                                                               aria-label="Correct answer: Azure Functions">
                                                             <span class="custom-radio" aria-hidden="true"></span>
                                                             <div class="margin-inline-sm">
-                                                                <p>Azure Pipelines</p>
+                                                                <p>Azure Functions</p>
 
                                                             </div>
                                                         </label>
                                                         <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
+                                                            <p>Azure Functions is the correct choice because you can use
+                                                                existing Java code with minimal modification.</p>
                                                         </div>
                                                         <input id="quiz-choice-0-1" type="radio" name="0" value="1"
                                                                class="visually-hidden choice-input" disabled="disabled">
@@ -2132,28 +2087,11 @@ Table of contents						</span>
                                                                class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet">
                                                             <span class="custom-radio" aria-hidden="true"></span>
                                                             <div class="margin-inline-sm">
-                                                                <p>GitHub Actions</p>
+                                                                <p>Azure Logic Apps</p>
 
                                                             </div>
                                                         </label>
                                                         <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
-                                                        </div>
-                                                        <input id="quiz-choice-0-2" type="radio" name="0" value="2"
-                                                               class="visually-hidden choice-input"
-                                                               data-com.bitwarden.browser.user-edited="yes"
-                                                               disabled="disabled" checked="checked">
-                                                        <label for="quiz-choice-0-2" aria-required="true"
-                                                               class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet is-selected is-correct"
-                                                               aria-label="Correct answer: Azure Boards">
-                                                            <span class="custom-radio" aria-hidden="true"></span>
-                                                            <div class="margin-inline-sm">
-                                                                <p>Azure Boards</p>
-
-                                                            </div>
-                                                        </label>
-                                                        <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
-                                                            <p>Azure Boards is an agile project-management tool. It
-                                                                would not be used to automate a CI/CD process.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2164,54 +2102,43 @@ Table of contents						</span>
                                                      aria-labelledby="quiz-question-2">
                                                     <div id="quiz-question-2" class="margin-top-sm margin-bottom-xs">
                                                         <span class="font-weight-semibold">2. </span>
-                                                        <p>Which
-                                                            service could help you manage the VMs that your developers
-                                                            and testers
-                                                            need to ensure that your new app works across various
-                                                            operating systems?</p>
+                                                        <p>You want to orchestrate a workflow by using APIs from several
+                                                            well-known services. Which is the best option for this
+                                                            scenario?</p>
                                                     </div>
                                                     <div class="margin-inline-lg-tablet margin-inline-none margin-top-xxs">
                                                         <input id="quiz-choice-1-0" type="radio" name="1" value="0"
+                                                               class="visually-hidden choice-input" disabled="disabled">
+                                                        <label for="quiz-choice-1-0" aria-required="true"
+                                                               class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet">
+                                                            <span class="custom-radio" aria-hidden="true"></span>
+                                                            <div class="margin-inline-sm">
+                                                                <p>Azure Functions</p>
+
+                                                            </div>
+                                                        </label>
+                                                        <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
+                                                        </div>
+                                                        <input id="quiz-choice-1-1" type="radio" name="1" value="1"
                                                                class="visually-hidden choice-input"
                                                                data-com.bitwarden.browser.user-edited="yes"
                                                                disabled="disabled" checked="checked">
-                                                        <label for="quiz-choice-1-0" aria-required="true"
-                                                               class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet is-selected is-correct"
-                                                               aria-label="Correct answer: Azure DevTest Labs">
-                                                            <span class="custom-radio" aria-hidden="true"></span>
-                                                            <div class="margin-inline-sm">
-                                                                <p>Azure DevTest Labs</p>
-
-                                                            </div>
-                                                        </label>
-                                                        <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
-                                                            <p>Azure DevTest Labs is used to manage VMs for testing,
-                                                                including configuration, provisioning, and automatic
-                                                                de-provisioning.</p>
-                                                        </div>
-                                                        <input id="quiz-choice-1-1" type="radio" name="1" value="1"
-                                                               class="visually-hidden choice-input" disabled="disabled">
                                                         <label for="quiz-choice-1-1" aria-required="true"
-                                                               class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet">
+                                                               class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet is-selected is-correct"
+                                                               aria-label="Correct answer: Azure Logic Apps">
                                                             <span class="custom-radio" aria-hidden="true"></span>
                                                             <div class="margin-inline-sm">
-                                                                <p>Azure Test Labs</p>
+                                                                <p>Azure Logic Apps</p>
 
                                                             </div>
                                                         </label>
                                                         <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
-                                                        </div>
-                                                        <input id="quiz-choice-1-2" type="radio" name="1" value="2"
-                                                               class="visually-hidden choice-input" disabled="disabled">
-                                                        <label for="quiz-choice-1-2" aria-required="true"
-                                                               class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet">
-                                                            <span class="custom-radio" aria-hidden="true"></span>
-                                                            <div class="margin-inline-sm">
-                                                                <p>Azure Repos</p>
-
-                                                            </div>
-                                                        </label>
-                                                        <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
+                                                            <p>Azure
+                                                                Logic Apps makes it easy to create a workflow across
+                                                                well-known
+                                                                services with less effort than writing code and manually
+                                                                orchestrating
+                                                                all the steps yourself.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2222,8 +2149,13 @@ Table of contents						</span>
                                                      aria-labelledby="quiz-question-3">
                                                     <div id="quiz-question-3" class="margin-top-sm margin-bottom-xs">
                                                         <span class="font-weight-semibold">3. </span>
-                                                        <p>Which service lacks features to assign individual developers
-                                                            tasks to work on?</p>
+                                                        <p>Your
+                                                            team has limited experience with writing custom code, but it
+                                                            sees
+                                                            tremendous value in automating several important business
+                                                            processes.
+                                                            Which of the following options is your team's best
+                                                            option?</p>
                                                     </div>
                                                     <div class="margin-inline-lg-tablet margin-inline-none margin-top-xxs">
                                                         <input id="quiz-choice-2-0" type="radio" name="2" value="0"
@@ -2232,45 +2164,33 @@ Table of contents						</span>
                                                                class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet">
                                                             <span class="custom-radio" aria-hidden="true"></span>
                                                             <div class="margin-inline-sm">
-                                                                <p>Azure Boards</p>
+                                                                <p>Azure Functions</p>
 
                                                             </div>
                                                         </label>
                                                         <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
                                                         </div>
                                                         <input id="quiz-choice-2-1" type="radio" name="2" value="1"
-                                                               class="visually-hidden choice-input" disabled="disabled">
-                                                        <label for="quiz-choice-2-1" aria-required="true"
-                                                               class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet">
-                                                            <span class="custom-radio" aria-hidden="true"></span>
-                                                            <div class="margin-inline-sm">
-                                                                <p>GitHub</p>
-
-                                                            </div>
-                                                        </label>
-                                                        <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
-                                                        </div>
-                                                        <input id="quiz-choice-2-2" type="radio" name="2" value="2"
                                                                class="visually-hidden choice-input"
                                                                data-com.bitwarden.browser.user-edited="yes"
                                                                disabled="disabled" checked="checked">
-                                                        <label for="quiz-choice-2-2" aria-required="true"
+                                                        <label for="quiz-choice-2-1" aria-required="true"
                                                                class="quiz-choice position-relative display-flex margin-bottom-xxs padding-block-xxs padding-inline-xs padding-block-none-tablet is-focused is-selected is-correct"
-                                                               aria-label="Correct answer: Azure Pipelines">
+                                                               aria-label="Correct answer: Azure Logic Apps">
                                                             <span class="custom-radio" aria-hidden="true"></span>
                                                             <div class="margin-inline-sm">
-                                                                <p>Azure Pipelines</p>
+                                                                <p>Azure Logic Apps</p>
 
                                                             </div>
                                                         </label>
                                                         <div class="quiz-choice-explanation margin-block-xxs font-weight-semibold margin-left-lg padding-left-xs font-size-md">
                                                             <p>Azure
-                                                                Pipelines is a CI/CD tool for building an automated
-                                                                toolchain. It lacks
-                                                                features to assign tasks for individual developers to
-                                                                work on.
-                                                                However, it can automate other tools to assign tasks to
-                                                                users.</p>
+                                                                Logic Apps is best suited for users who are more
+                                                                comfortable in a
+                                                                visual environment that allows them to automate their
+                                                                business
+                                                                processes. Logic Apps is the best option in this
+                                                                scenario.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2293,7 +2213,7 @@ Table of contents						</span>
                                                     <!----></h2>
                                                 <p>
                                                     <a class="button button-primary button-filled"
-                                                       href="https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/8-summary/"
+                                                       href="https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/7-summary/"
                                                        data-bi-name="continue" target="">
                                                         <span><!---->Continue<!----></span>
                                                         <span class="icon" aria-hidden="true"><span
@@ -2318,11 +2238,11 @@ Table of contents						</span>
                             <p class="font-weight-semibold">
                                 Need help? See our <a id="troubleshooting-guide" class="has-text-primary"
                                                       data-bi-name="troubleshooting"
-                                                      href="https://docs.microsoft.com/en-us/learn/support/troubleshooting?uid=learn.azure.azure-devops-devtest-labs.knowledge-check&amp;documentId=43bc5dad-fe0a-f273-495e-202458ac17de&amp;versionIndependentDocumentId=98d99988-ed79-7678-8e3e-cbcdef27a72a&amp;contentPath=%2FMicrosoftDocs%2Flearn-pr%2Fblob%2Flive%2Flearn-pr%2Fazure-fundamentals%2Fazure-devops-devtest-labs%2F7-knowledge-check.yml&amp;url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Flearn%2Fmodules%2Fazure-devops-devtest-labs%2F7-knowledge-check&amp;author=rknapp">troubleshooting
+                                                      href="https://docs.microsoft.com/en-us/learn/support/troubleshooting?uid=learn.azure.serverless-fundamentals.knowledge-check&amp;documentId=9db4efe9-8c08-044f-be50-687becde2f22&amp;versionIndependentDocumentId=3433caa0-1a58-7384-2ab2-c8a5f72af5a7&amp;contentPath=%2FMicrosoftDocs%2Flearn-pr%2Fblob%2Flive%2Flearn-pr%2Fazure-fundamentals%2Fserverless-fundamentals%2F6-knowledge-check.yml&amp;url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Flearn%2Fmodules%2Fserverless-fundamentals%2F6-knowledge-check&amp;author=rknapp">troubleshooting
                                 guide</a> or provide specific feedback by <a id="module-unit-feedback-link"
                                                                              class="has-text-primary"
                                                                              data-bi-name="feedback"
-                                                                             href="https://docs.microsoft.com/en-us/learn/support/troubleshooting?uid=learn.azure.azure-devops-devtest-labs.knowledge-check&amp;documentId=43bc5dad-fe0a-f273-495e-202458ac17de&amp;versionIndependentDocumentId=98d99988-ed79-7678-8e3e-cbcdef27a72a&amp;contentPath=%2FMicrosoftDocs%2Flearn-pr%2Fblob%2Flive%2Flearn-pr%2Fazure-fundamentals%2Fazure-devops-devtest-labs%2F7-knowledge-check.yml&amp;url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Flearn%2Fmodules%2Fazure-devops-devtest-labs%2F7-knowledge-check&amp;author=rknapp#report-feedback">reporting
+                                                                             href="https://docs.microsoft.com/en-us/learn/support/troubleshooting?uid=learn.azure.serverless-fundamentals.knowledge-check&amp;documentId=9db4efe9-8c08-044f-be50-687becde2f22&amp;versionIndependentDocumentId=3433caa0-1a58-7384-2ab2-c8a5f72af5a7&amp;contentPath=%2FMicrosoftDocs%2Flearn-pr%2Fblob%2Flive%2Flearn-pr%2Fazure-fundamentals%2Fserverless-fundamentals%2F6-knowledge-check.yml&amp;url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Flearn%2Fmodules%2Fserverless-fundamentals%2F6-knowledge-check&amp;author=rknapp#report-feedback">reporting
                                 an issue</a>. </p>
                         </section>
                     </div>
@@ -2351,7 +2271,7 @@ Table of contents						</span>
                         <footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
                             <div class="display-flex is-full-height padding-right-lg-desktop">
                                 <a data-mscc-ic="false" class="locale-selector-link button button-clear flex-shrink-0"
-                                   href="https://docs.microsoft.com/en-us/locale?target=https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/7-knowledge-check"
+                                   href="https://docs.microsoft.com/en-us/locale?target=https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/6-knowledge-check"
                                    data-bi-name="select-locale">
 					<span class="icon" aria-hidden="true">
 						<span class="docon docon-world"></span>
@@ -2485,7 +2405,7 @@ High contrast					</span>
     <footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
         <div class="display-flex is-full-height padding-right-lg-desktop">
             <a data-mscc-ic="false" class="locale-selector-link button button-clear flex-shrink-0"
-               href="https://docs.microsoft.com/en-us/locale?target=https://docs.microsoft.com/en-us/learn/modules/azure-devops-devtest-labs/7-knowledge-check"
+               href="https://docs.microsoft.com/en-us/locale?target=https://docs.microsoft.com/en-us/learn/modules/serverless-fundamentals/6-knowledge-check"
                data-bi-name="select-locale">
 					<span class="icon" aria-hidden="true">
 						<span class="docon docon-world"></span>
@@ -2593,7 +2513,7 @@ High contrast					</span>
     </footer>
 </section>
 
-<script src="azure-devops_files/MathJax.js"
+<script src="azure-serverless-solutions_files/MathJax.js"
         integrity="sha384-RLsAi7wiVvnmHrRjlVvUjU45C0bfsIBg6Gsxue6azjJi+lA5q5uK+XbGzO3yn5g1"
         crossorigin="anonymous"></script>
 <div id="action-panel" role="region" aria-label="Action Panel" class="action-panel has-default-focus"
