@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 from anki_card_creator import create_anki_card
 
-with open('azure/az-900-prep-exams/practice-exam-1.html') as file:
+with open('azure/az-900-prep-exams/practice-exam-2.html') as file:
     soup = BeautifulSoup(file, 'html.parser')
 
     exam = []
